@@ -34,7 +34,7 @@
 }
 
 .input1:focus{
-    border: none;
+    border-color: none;
 }
 .btn-main{
     width: 100%;
