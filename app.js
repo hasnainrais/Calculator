@@ -1,5 +1,7 @@
 let display = document.getElementById("display");
 
+let operator = ['+','-','*','/'];
+
 function appendToDisplay(input){
 
 
@@ -16,26 +18,16 @@ function clearDisplay(){
 
 }
 
-function splitInput(){
-
-    display.value += input.split("");
- 
-    
-    
-}
 
 
 function calculate(){
 
     display.value = eval(display.value)
 
+}
 
-    // if (display.value == '+'){
-        
-    //    let add =  display.value + display.value;
-
-    //     console.log(add);
-        
-    // }
+function del(){
+    let lastCharc = display.value[display.value.length -1];
     
+    display.value = display.value.slice(0,-1)
 }
